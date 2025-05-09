@@ -11,12 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('querys', function (Blueprint $table) {
+        Schema::create('employees', function (Blueprint $table) {
             $table->id();
-            $table->integer('employee_id');
-            $table->integer('material_id');
-            $table->date('date');
-            $table->string('canceled', 1)->default("N");
+            $table->string('name', 100);
+            $table->string('address', 255);
+            $table->string('email', 255)->unique();
+            $table->string('phone', 20);
+            $table->integer('position_id');
+            $table->string('active',1)->default('S');
             $table->boolean('status')->default(1);
             $table->timestamps();
         });
@@ -27,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('querys');
+        Schema::dropIfExists('employees');
     }
 };

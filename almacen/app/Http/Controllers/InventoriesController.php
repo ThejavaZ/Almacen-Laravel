@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Querys;
+use App\Models\Inventories;
 use Illuminate\Http\Request;
 
-class QuerysController extends Controller
+class InventoriesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class QuerysController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Querys $querys)
+    public function show(Inventories $inventories)
     {
         //
     }
@@ -42,7 +42,7 @@ class QuerysController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Querys $querys)
+    public function edit(Inventories $inventories)
     {
         //
     }
@@ -50,7 +50,7 @@ class QuerysController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Querys $querys)
+    public function update(Request $request, Inventories $inventories)
     {
         //
     }
@@ -58,7 +58,7 @@ class QuerysController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Querys $querys)
+    public function destroy(Inventories $inventories)
     {
         //
     }

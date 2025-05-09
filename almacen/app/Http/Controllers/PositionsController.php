@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Description_sales;
+use App\Models\Positions;
 use Illuminate\Http\Request;
 
-class DescriptionSalesController extends Controller
+class PositionsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class DescriptionSalesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Description_sales $description_sales)
+    public function show(Positions $positions)
     {
         //
     }
@@ -42,7 +42,7 @@ class DescriptionSalesController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Description_sales $description_sales)
+    public function edit(Positions $positions)
     {
         //
     }
@@ -50,7 +50,7 @@ class DescriptionSalesController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Description_sales $description_sales)
+    public function update(Request $request, Positions $positions)
     {
         //
     }
@@ -58,7 +58,7 @@ class DescriptionSalesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Description_sales $description_sales)
+    public function destroy(Positions $positions)
     {
         //
     }
